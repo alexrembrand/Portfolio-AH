@@ -6,7 +6,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   padding: 10px;
-  background: white;
+  background: #fff2c2;
 }
 .headerContainer    {
     display: flex;
@@ -79,11 +79,40 @@ body {
 }
 
 /* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-    border:3px solid black;
+.cardOne {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+}
+
+.cardTwo {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #263F52;
+  color: white;
+}
+
+.cardThree {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #1F3252;
+  color: white;
+}
+
+.cardFour {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #153823;
+  color: white;
 }
 
 /* Clear floats after the columns */
@@ -95,12 +124,12 @@ body {
 
 .columnMenu    {
   display: grid;
-  height: 200px;
+  height: 250px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
-  column-gap: 1px;
   grid-template-areas:
+  
 }
 /* Footer */
 .footer {
