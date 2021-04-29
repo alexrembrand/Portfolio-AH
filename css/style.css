@@ -1,0 +1,415 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:rgb(2, 2, 2);
+}
+/*--- top navigation ---*/
+
+.initals  {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 15px;
+  font-family: joschmi;
+  font-style: normal;
+  grid-area: home;
+  color: whitesmoke;
+  grid-area: initals;
+
+}
+
+.topNav {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  grid-template-areas:
+  "home contact";
+  width: 100%;
+  color: whitesmoke;
+}
+
+.contact  {
+  grid-area: contact;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  font-size: 12px;
+  align-items: center;
+  font-family: 'montserrat' , sans-serif;
+  letter-spacing: 1px;
+}
+/*--- end top navigation ---*/
+
+/*--- main header ---*/
+
+.headerContainer    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    color: whitesmoke;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 170px;
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 76px;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 1;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+}
+
+
+
+/*---end Main Header ---*/
+
+/* ---- typist section -------*/
+
+
+
+
+/*-----end of typist section------*/
+
+
+/*--- Jumbotron ---*/
+
+.jumbotron  {
+  background-image: url("/images/lou-batier-5EoWFa_Htdo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  height: calc(100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*--- End Jumbotron ---*/
+
+
+.selectedText {
+  display: none;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+
+
+
+/* Left column */
+.leftColumn {   
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  grid-area: left;
+}
+
+/* Right column */
+.rightColumn {
+  display: flex;
+  width: 100vw;
+  height: 50;
+  grid-area: right;
+}
+.cardContainer  {
+  display: grid;
+  height: 100vh;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "about portfolio"
+  "resume photo"
+  ;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  grid-area: about; 
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  grid-area: portfolio;
+  
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  grid-area: resume;
+  
+}
+.photography {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  grid-area: photo;
+}
+
+
+
+
+
+
+
+
+/* Add a card effect for articles */
+
+.cardOne {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 250px;
+  padding: 5px;
+  background-color: #36454F;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: thin;
+  font-weight: 300;
+}
+
+.cardTwo {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #263F52;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: thin;
+  font-weight: 300;
+}
+
+.cardThree {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #1F3252;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: thin;
+  font-weight: 300;
+}
+
+.cardFour {
+  display: flex;
+  justify-content: flex-end;
+  height: 250px;
+  padding: 5px;
+  background-color: #153823;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-style: thin;
+  font-weight: 300;
+}
+
+.columnMenu    {
+  display: grid;
+  height: 250px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+  grid-template-areas:
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+}
+/* Footer */
+.footerInfo {
+
+    display: grid;grid-template-rows: 1fr;
+    grid-template-columns: 3fr;
+    grid-template-areas:
+    "initals initals text";
+    width: 100%;
+    color: whitesmoke;
+  }
+  
+
+.footerSection  {
+  display:  flex-start;
+  justify-content: center;
+  align-items: center;
+  font-family:  'montserrat' , sans-serif;
+  font-size: 14px;
+  grid-area: text;
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--- scroll ---*/
+
+#section10 a {
+  padding-top: 60px;
+}
+#section10 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#section10 a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.demo a:hover {
+  opacity: .5;
+}
+
+/*--- end scroll ---*/
+
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media only screen and (max-device-width:700px){
+
+  .cardContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+  }
+  .height {
+    height: 25%;
+  }
+}
+
+@media only screen and (min-device-width:701px) and (max-width:1000px){
+
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .height {
+    height: 25%;
+  }
+
+}
